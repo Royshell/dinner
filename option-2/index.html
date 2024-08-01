@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secret Dinners</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Secret Dinners</h1>
+        <p>You have found the secret path</p> 
+        Welcome to our exclusive society of culinary adventurers. Leave your details below to
+        apply for an invitation to our next secret dinner. 
+        <p>Shhh... it's a secret!</p>
+        <form>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="difference">What makes you different?</label>
+            <textarea id="difference" name="difference" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+        <div class="placeholder">
+            <img src="./img/gramophone.jpg" alt="Gramophone" id="hover-img">
+        </div>
+    </div>
+    <audio id="theme-song" src="./sounds/theme-song.mp3"></audio>
+    <script src="script.js"></script>
+</body>
+
+</html>

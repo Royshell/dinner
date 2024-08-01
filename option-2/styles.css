@@ -1,0 +1,100 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background: url('./img/one.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    opacity: 0;
+    animation: fadeIn 2s forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+.container {
+    text-align: center;
+    max-width: 600px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.9);
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin: 10px 0 5px;
+}
+
+input,
+textarea {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #555;
+    border-radius: 5px;
+    background-color: #333;
+    color: #ccc;
+    font-size: 1em;
+}
+
+textarea {
+    resize: vertical;
+    height: 100px;
+}
+
+button {
+    padding: 10px;
+    background-color: #444;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #666;
+}
+
+.placeholder {
+    margin-top: 20px;
+}
+
+.placeholder img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    filter: grayscale(100%);
+    transition: transform 0.3s, filter 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+}
+
+.placeholder img:hover,
+.placeholder img.colored {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+}
+
+.placeholder img.colored {
+    filter: grayscale(0%);
+}
